@@ -1,0 +1,4 @@
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\bin\Debug\PhaniResume.Models.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\bin\Debug\PhaniResume.Models.pdb
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\obj\Debug\PhaniResume.Models.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\obj\Debug\PhaniResume.Models.pdb

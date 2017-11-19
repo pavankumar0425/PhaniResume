@@ -64,3 +64,4 @@ c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResum
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume\bin\Microsoft.AI.Web.xml
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume\obj\Debug\PhaniResume.dll
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume\obj\Debug\PhaniResume.pdb
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume\obj\Debug\PhaniResume.csprojResolveAssemblyReference.cache

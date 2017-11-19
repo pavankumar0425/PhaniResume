@@ -1,0 +1,5 @@
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\ServiceLayer.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\ServiceLayer.pdb
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.pdb
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
