@@ -26,6 +26,12 @@ namespace PhaniResume.DependencyResolution {
             Scan(
                 scan => {
                     scan.TheCallingAssembly();
+                    scan.AssembliesAndExecutablesFromApplicationBaseDirectory(assembly =>
+                        assembly.FullName.StartsWith("infrastructure"));
+                    scan.AssembliesAndExecutablesFromApplicationBaseDirectory(assembly =>
+                       assembly.FullName.StartsWith("PhaniResume."));
+                    scan.AssembliesAndExecutablesFromApplicationBaseDirectory(assembly =>
+                        assembly.FullName.StartsWith("ServiceLayer"));
                     scan.WithDefaultConventions();
 					scan.With(new ControllerConvention());
                 });

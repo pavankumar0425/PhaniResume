@@ -37,7 +37,7 @@ namespace PhaniResume.DependencyResolution {
 
         public void ScanTypes(TypeSet types, Registry registry)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         #endregion
