@@ -11,7 +11,7 @@ namespace ServiceLayer.WebApiProxy
     {
         public void SetProxyAddress(string url)
         {
-            
+            webapi.proxies.Configuration.MyWebApiProxyBaseAddress = url;
         }
     }
 }

@@ -1,0 +1,5 @@
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\bin\Release\PhaniResume.Models.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\bin\Release\PhaniResume.Models.pdb
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\obj\Release\PhaniResume.Models.csprojResolveAssemblyReference.cache
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\obj\Release\PhaniResume.Models.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\PhaniResume.Models\obj\Release\PhaniResume.Models.pdb

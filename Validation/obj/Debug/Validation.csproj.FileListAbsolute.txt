@@ -2,6 +2,5 @@ c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation\bin\Debug\Validation.pdb
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation\bin\Debug\FluentValidation.dll
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation\bin\Debug\FluentValidation.xml
-c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation\obj\Debug\Validation.csprojResolveAssemblyReference.cache
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation\obj\Debug\Validation.dll
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\Validation\obj\Debug\Validation.pdb
