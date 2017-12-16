@@ -178,12 +178,14 @@ namespace webapi.proxies.Interfaces
 	public partial interface IPhaniResumeClient : IClientBase
 	{	
 
+		/// <param name="customerId"></param>
 
 		/// <returns></returns>
-		Task<HttpResponseMessage> GetAllResumeDetailsByCustomerAsync();
+		Task<HttpResponseMessage> GetAllResumeDetailsByCustomerAsync(Int32 customerId);
 
+		/// <param name="customerId"></param>
 		/// <returns></returns>
-		List<ResumeDetail> GetAllResumeDetailsByCustomer();
+		List<ResumeDetail> GetAllResumeDetailsByCustomer(Int32 customerId);
 
 		/// <param name="customerId"></param>
 
@@ -426,27 +428,30 @@ namespace webapi.proxies.Clients
 		/// <summary>
 		/// 
 		/// </summary>
+		/// <param name="customerId"></param>
 		/// <returns></returns>
-		protected virtual async Task<HttpResponseMessage> GetAllResumeDetailsByCustomerAsyncMsg()
+		protected virtual async Task<HttpResponseMessage> GetAllResumeDetailsByCustomerAsyncMsg(Int32 customerId)
 		{
-			return await HttpClient.GetAsync("PhaniResume/GetAllResumeDetailsByCustomer");
+			return await HttpClient.GetAsync("PhaniResume/GetAllResumeDetailsByCustomer?customerId=" + customerId);
 		}
 
 		/// <summary>
 		/// 
 		/// </summary>
+		/// <param name="customerId"></param>
 		/// <returns></returns>
-		public virtual async Task<HttpResponseMessage> GetAllResumeDetailsByCustomerAsync()
+		public virtual async Task<HttpResponseMessage> GetAllResumeDetailsByCustomerAsync(Int32 customerId)
 		{
-			return await HttpClient.GetAsync("PhaniResume/GetAllResumeDetailsByCustomer");
+			return await HttpClient.GetAsync("PhaniResume/GetAllResumeDetailsByCustomer?customerId=" + customerId);
 		}
 
 		/// <summary>
 		/// 
 		/// </summary>
-		public virtual List<ResumeDetail> GetAllResumeDetailsByCustomer()
+		/// <param name="customerId"></param>
+		public virtual List<ResumeDetail> GetAllResumeDetailsByCustomer(Int32 customerId)
 		{
-			var result = Task.Run(() => GetAllResumeDetailsByCustomerAsyncMsg()).Result;		 
+			var result = Task.Run(() => GetAllResumeDetailsByCustomerAsyncMsg(customerId)).Result;		 
 			 
 			EnsureSuccess(result);
 			 			 

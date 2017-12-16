@@ -1,8 +1,6 @@
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\ServiceLayer.dll.config
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\ServiceLayer.dll
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\ServiceLayer.pdb
-c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.dll
-c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.pdb
-c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\ServiceLayer.dll.config
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\DocsByReflection.dll
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\HelperSharp.dll
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -29,4 +27,5 @@ c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLay
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\System.Web.WebPages.xml
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
 c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
-c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.dll
+c:\users\pavankumar\documents\visual studio 2017\Projects\PhaniResume\ServiceLayer\obj\Debug\ServiceLayer.pdb

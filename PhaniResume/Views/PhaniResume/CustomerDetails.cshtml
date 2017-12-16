@@ -1,7 +1,7 @@
 ﻿@model webapi.proxies.Models.CustomerDetail
 <div id="CustomerDetails" class="panel panel-success mvc-form">
     <div class="panel-heading">
-        <div style="float: left; margin-top: 5px;">
+        <div >
             <h3 class="panel-title">
                 Applicant Personal Details
             </h3>
@@ -36,10 +36,24 @@
                     @Html.TextBoxFor(x => x.Zipcode, new { @class = "form-control", type = "number" })
                 </div>
             </div>
-
         </div>
-    </div>
-    
+        
+        <div id="Resume-Details-Summary"></div>
 
+    </div>
 </div>
+
+
+@section scripts {
+    <script>
+        $(function() {
+            ResumeDetials.init({
+                customerId: 1 ,
+                applicationPath :"@Request.ApplicationPath"
+            });
+        });
+    </script>
+
+}
+
 

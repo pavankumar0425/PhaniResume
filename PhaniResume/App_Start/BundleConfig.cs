@@ -23,8 +23,16 @@ namespace PhaniResume
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/DataTables").Include(
+                "~/Scripts/DataTables/jquery.dataTables.js",
+                "~/Scripts/DataTables/datatables.bootstrap.js",
+                "~/Scripts/DataTables/datatables.foundation.js"));
+            bundles.Add(new ScriptBundle("~/bundles/MVC").IncludeDirectory(
+                "~/Scripts/MVC","*.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css"));
         }
     }

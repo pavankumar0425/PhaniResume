@@ -11,13 +11,13 @@ namespace ServiceLayer.Services
 {
     public class ResumeService : IResumeService
     {
-        public List<ResumeDetail> GetAllResumeDetailsByCustomer()
+        public List<ResumeDetail> GetAllResumeDetailsByCustomer(int cutomerId)
         {
             try
             {
                 using (var client=new PhaniResumeClient())
                 {
-                    return client.GetAllResumeDetailsByCustomer();
+                    return client.GetAllResumeDetailsByCustomer(cutomerId);
                 }
             }
             catch (Exception e)

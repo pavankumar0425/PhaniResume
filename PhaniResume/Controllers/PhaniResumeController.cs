@@ -23,5 +23,17 @@ namespace PhaniResume.Controllers
             var s = _resumeService.GetcustomerByCustomer(1);
             return View("CustomerDetails",s);
         }
+
+        public ActionResult GetResumeDetailsSummary(int customerId)
+        {
+            var s = _resumeService.GetcustomerByCustomer(customerId);
+            return PartialView("GetResumeDetailsSummary", s);
+        }
+
+        public ActionResult GetNewResume(int customerId)
+        {
+            var s = _resumeService.GetcustomerByCustomer(customerId);
+            return PartialView("GetResumeDetailsSummary", s);
+        }
     }
 }

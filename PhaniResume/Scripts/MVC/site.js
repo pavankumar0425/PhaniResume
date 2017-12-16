@@ -9,7 +9,7 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    function removeDataTable(selector) {
+    function removeDataTable(selector) {    
         $(selector).each(function() {
             if ($.fn.dataTable.isDataTable(this.id)) {
                 $(this.id).html('');
@@ -19,10 +19,11 @@
     }
 
     function makeDataTable(selector, options) {
+        debugger;
         if ($.fn.dataTable.isDataTable(selector)) {
             $(selector).DataTable().destroy();
         }
-        if ($(selector + " tr.GridEmptyDataTemplate").length > 0)
+        if ($(selector + "tr.GridEmptyDataTemplate").length > 0)
             return;
 
         //Set Defaults
@@ -35,7 +36,7 @@
                     "50 items displayed per screen"
                 ]
             ],
-            pageingType: "simple",
+            pagingType: "simple",
             searching: false,
             info: false,
             paging: true
@@ -43,12 +44,12 @@
 
         jQuery.extend(defaults, options);
         var api = $(selector).DataTable(defaults);
-        fixDataTable(api, selector + "_wraper");
+        fixDataTable(api, selector + "_wrapper");
         return api;
     }
 
     function fixDataTable(api, selector) {
-        addpaging()(api, selector);
+        addpaging(api, selector);
         updateTableShowing(api, selector);
         moveDisplayPerScreen(selector);
         api.on('page.dt',
@@ -58,12 +59,12 @@
             });
         api.on('length.dt',
             function(e, settings, len) {
-                var tableApi = new s.fn.dataTable.Api(settings);
+                var tableApi = new $.fn.dataTable.Api(settings);
                 updateTableShowing(api, selector);
             });
         api.on('order.dt',
             function(e, settings, len) {
-                var tableApi = new s.fn.dataTable.Api(settings);
+                var tableApi = new $.fn.dataTable.Api(settings);
                 updateTableShowing(api, selector);
             });
 
@@ -257,11 +258,11 @@
     function doNotCacheQueryString(url) {
         try {
             if (url.index("?") == -1) {
-                return url + "?cache=" + new Date.getTime();
+                return url + "?cache=" + new Date().getTime();
             }
         } catch (e) {
         }
-        return url + "&cache=" + new Date.getTime();
+        return url + "&cache=" + new Date().getTime();
     }
 
     var defaultSiteErroText = "error";

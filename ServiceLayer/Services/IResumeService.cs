@@ -9,7 +9,7 @@ namespace ServiceLayer.Services
 {
     public interface IResumeService
     {
-        List<ResumeDetail> GetAllResumeDetailsByCustomer();
+        List<ResumeDetail> GetAllResumeDetailsByCustomer(int customerId);
 
         CustomerDetail GetcustomerByCustomer(int customerId);
     }

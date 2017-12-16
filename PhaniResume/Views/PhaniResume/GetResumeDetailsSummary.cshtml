@@ -1,0 +1,95 @@
+﻿
+@model webapi.proxies.Models.CustomerDetail
+
+<style>
+    .dataTables_paginate {
+        display: none;
+    }
+</style>
+<div id="ResumeDetailSummaryDiv" class="panel panel-success mvc-form">
+    
+    <div class="panel-heading">
+        <div style="float: left; margin-top:5px;">
+            <h3 class="panel-title">
+                Resume Summary
+            </h3>
+
+        </div>
+        <div style="float: right">
+            <a id="AddNewResume" data-image-id="@Model.CustomerDetailsID" class="btn btn-success">      Add Resume </a>
+        </div>
+
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body mvc-element panel-collapse collapse in" id="ResumeDetailsSummarypanelBody" print-toggle>
+        <table id="Resume-Details-Summary-Table" class="table table-condensed table-hover table-striped" cellspacing="0" style="border-width: 0; width: 100%;border-collapse: collapse"> 
+            @if (!Model.ResumeDetails.Any())
+            {
+                <tbody>
+                <tr class="GridEmptyDataTemplate">
+                    <td colspan="4">
+                        <div class="GridEmptyDataTemplate">
+                            No Resume Found
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            }
+            else
+            {
+                <thead>
+                <tr class="table-header">
+                    <th style="width: 20px;"></th>
+                    <th scope="col">Resume ID </th>
+                    <th scope="col"> Carrier Objective </th>
+                    <th scope="col"> Honors</th>
+                </tr>
+                </thead>
+                <tfoot >
+                <tr class="table-footer">
+                    <th colspan="4">
+                        <div class="row footer-div">
+                            <div class="col-sm-5">
+                                <a class="pagining previous btn btn-success btn-xs"> previous</a>
+                                <a class="pagining next btn btn-success btn-xs"> Next</a>
+                                <span class="SelectionHeader " style="margin-left: 10px; position: relative;"> Go to Page</span>
+                                <input type="text" value="1" class="form-control inlineBlock go-to-pagining-input editFieldGrid" style="width: 30px;" />
+                                <a class="go-to-pagining btn btn-success btn-xs">GO</a>
+                            </div>
+                        </div>
+                    </th>
+
+                </tr>
+
+                </tfoot>
+                <tbody>
+                @{
+                    foreach (var resume in Model.ResumeDetails)
+                    {
+                        <tr>
+                            <td> <span style="margin-right: 10px;" class="fa fa-trash-o fa-2x delete-resume" data-resume-detail-id="@resume.ResumeDetailsId" aria-hidden="true"> </span></td>
+                            <td> @resume.ResumeDetailsId</td>
+                            <td> @resume.CAREER_OBJECTIVE</td>
+                            <td> @resume.HONORS_AND_REWARDS</td>
+                        </tr>
+                    }
+                }
+                </tbody>
+            }
+        </table>
+    </div>
+</div>
+
+<script>
+    $(function() {
+
+        ResumeDetials.loadCollectiionPasswordEvents({
+            DeleteResumeURL: "@Html.Raw(Url.Action("GetCustomerDetails","PhaniResume"))",
+            AddResumeURL: ""
+
+        });
+
+        site.makeDataTable("#Resume-Details-Summary-Table");
+
+    })
+</script>
